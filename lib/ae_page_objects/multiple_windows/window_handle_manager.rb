@@ -23,7 +23,7 @@ module AePageObjects
       end
 
       def self.switch_to(handle)
-        browser.switch_to.window(handle)
+        browser.switch_to_window(handle)
       end
 
       def self.browser

@@ -23,7 +23,7 @@ module AePageObjects
         driver = Capybara.current_session.driver
 
         case driver
-        when Capybara::Selenium::Driver then
+        when Capybara::Poltergeist::Driver then
           require 'ae_page_objects/multiple_windows/browser'
           MultipleWindows::Browser.new
         else

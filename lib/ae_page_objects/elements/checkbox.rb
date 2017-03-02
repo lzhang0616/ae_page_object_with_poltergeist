@@ -9,7 +9,7 @@ module AePageObjects
     end
 
     def checked?
-      node.native.attribute('checked').to_s.eql?("true")
+      node.native.checked?
     end
 
     def unchecked?
